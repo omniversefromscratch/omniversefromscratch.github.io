@@ -1,0 +1,20 @@
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- include sidebar-toggler.html -%}
+<nav class="sidebar menu">
+  <ul>
+  {%- for path in page_paths -%}
+    {%- assign my_page = site.pages | where: "path", path | first -%}
+    {%- if my_page.icon -%}
+    <li>
+      <a class="sidebar-layout-nav-item-active" aria-current="page" tabindex="0" href="{{ my_page.permalink }}">
+        <span class="sidebar-layout-nav-item-icon">{{ my_page.icon }}</span>
+        <div class="label">{{ my_page.title }}</div>
+        {%- if my_page.notification-type -%}
+        <div class="notification-{{ my_page.notification-type }}"><span>{{ my_page.notification }}</span></div>
+        {%- endif -%}
+      </a>
+    </li>
+    {%- endif -%}
+  {%- endfor -%}
+  </ul>
+</nav>
