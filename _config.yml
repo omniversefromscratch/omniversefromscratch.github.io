@@ -28,7 +28,7 @@ plugins:
 
 header_pages:
   - index.md
-  # - templates.md
+  - products.md
   # - projects.md
   # - deployments.md
   # - cycles.md
