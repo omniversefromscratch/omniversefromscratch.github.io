@@ -7,4 +7,4 @@ icon: '<svg preserveAspectRatio="xMidYMin" width="16" height="16" viewBox="0 0 2
 
 # Omniverse App Generator
 
-Fill in a simple form to generate your very own NIVIDA Omniverse App with time-saving presets!
+<a href="https://forms.gle/ciHzTzpyfaZyg7RF9" target="_blank">Generate your customized NIVIDA Omniverse App with time-saving presets within 24 hours!</a>
